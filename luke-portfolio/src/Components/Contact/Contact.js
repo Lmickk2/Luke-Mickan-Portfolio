@@ -1,8 +1,12 @@
 import BackHomeButton from "../BackHomeButton";
+import { Helmet } from "react-helmet";
 
 function Contact() {
     return (
         <div>
+            <Helmet>
+                <title>Luke Mickan | Contact</title>
+            </Helmet>
           <div className="container">
             <h1 className="contact">Luke Mickan</h1>
             <ul className="social-contact">

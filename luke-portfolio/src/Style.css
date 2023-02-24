@@ -540,16 +540,18 @@ a:hover {
 
 .about-me {
   color: white;
-  transform: translate(20%, -70%);
   margin: auto;
   width: 60%;
   height: 400px;
   text-align: center;
+  margin-top: -2%;
+  float: right;
 }
 
 .my-intro {
   color: white;
   font-family: "Cormorant", serif;
+  width: 700px;
 }
 
 .h {
@@ -692,6 +694,8 @@ a:hover {
 .tech-used {
   display: flex;
   justify-content: center;
+  text-align: center;
+  width: auto;
 }
 
 .back {
@@ -711,6 +715,7 @@ a:hover {
 }
 
 .computer-display {
+  float: left;
   padding-left: 10px;
   max-width: 400px;
   max-height: 400px;

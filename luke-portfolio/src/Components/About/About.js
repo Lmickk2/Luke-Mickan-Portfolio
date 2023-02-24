@@ -1,8 +1,12 @@
 import BackHomeButton from "../BackHomeButton";
+import { Helmet } from "react-helmet";
 
 function About() {
     return (
         <div>
+            <Helmet>
+                <title>Luke Mickan | About</title>
+            </Helmet>
         <div>
           <div className="portrait">
             <div className="portrait-card">

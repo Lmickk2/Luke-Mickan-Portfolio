@@ -11,11 +11,14 @@ import {
   Routes,
   Navigate
 } from "react-router-dom";
+import SkullPatrol from "./Components/Projects/SkullPatrol";
+import IndividualProj from "./Components/Projects/IndividualProj";
 
 
 function App() {
 
 return (
+  
   <Router>
     <div className="App">
       <Routes>
@@ -23,6 +26,8 @@ return (
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/skullpatrol" element={<SkullPatrol />} />
+        <Route path="/indv" element={<IndividualProj />} />
       </Routes>
     </div>
   </Router>

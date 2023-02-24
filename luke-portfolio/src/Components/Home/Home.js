@@ -1,5 +1,6 @@
 import Navbar from "../Navbar";
 import { Link } from "react-router-dom";
+import Footer from "../Footer";
 
 function Home() {
   return (
@@ -33,6 +34,7 @@ function Home() {
           </Link>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

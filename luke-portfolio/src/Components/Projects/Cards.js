@@ -1,12 +1,15 @@
+import { useState, useEffect, useRef } from 'react';
+import { Link } from "react-router-dom";
+
 import SPWideImage from '../../images/SP-Wide.png';
 import KKWideImage from '../../images/KK-Wide.png';
 import ExpMiamiWideImage from '../../images/EXP-Wide.png';
 
-import { useState, useEffect, useRef } from 'react';
 
 function Cards() {
 
   function handleProjectHover(project, skills) {
+    
     const skillElements = skills.map((skill) => document.getElementById(skill));
   
     project.addEventListener('mouseenter', () => {
@@ -21,10 +24,25 @@ function Cards() {
       });
     });
   }
-  
-  handleProjectHover(document.getElementById('project1'), ['html', 'css', 'js', 'sql', 'node', 'github', 'hbs']);
-  handleProjectHover(document.getElementById('project2'), ['html', 'css', 'js', 'github']);
-  handleProjectHover(document.getElementById('project3'), ['html', 'css', 'js', 'react', 'node']);
+
+  function handleHoverEvent(event) {
+    const project = document.getElementById(event.target.id);
+    let skills = [];
+    switch (event.target.id) {
+      case 'project1':
+        skills = ['html', 'css', 'js', 'sql', 'node', 'github', 'hbs'];
+        break;
+      case 'project2':
+        skills = ['html', 'css', 'js', 'github'];
+        break;
+      case 'project3':
+        skills = ['html', 'css', 'js', 'react', 'node'];
+        break;
+      default:
+        break;
+    }
+    handleProjectHover(project, skills);
+  }
   
   const [cardsToShow, setCardsToShow] = useState(3);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -39,7 +57,7 @@ function Cards() {
     }
   }, []);
 
-  const updateCards = () => {
+  const updateCards = (cardsToShow) => {
     cards.forEach((card, index) => {
       if (index >= currentIndex && index < currentIndex + cardsToShow) {
         card.style.display = 'inline-block';
@@ -49,55 +67,61 @@ function Cards() {
     });
   };
 
+  useEffect(() => {
+    updateCards(cardsToShow);
+  }, [cardsToShow, currentIndex]);
+
   const previous = () => {
     if (currentIndex > 0) {
       setCurrentIndex(currentIndex - cardsToShow);
-      updateCards();
     }
   };
 
   const next = () => {
     if (currentIndex + cardsToShow < cards.length) {
       setCurrentIndex(currentIndex + cardsToShow);
-      updateCards();
     }
   };
 
+  useEffect(() => {
+    updateCards(cardsToShow);
+  }, [cardsToShow, currentIndex])
+  
     return (
         <div className="projects appear">
  <div className="navCard">
     <a href="#" id="prev" onClick={previous}>&laquo;</a>
     </div>
 	<div className="single-project">
-		<a href="./KnickKnack.html">
-		<img src={KKWideImage} className="project-image" onMouseEnter={handleProjectHover} id="project1"></img>
+		<Link to="/knickknack">
+		<img src={KKWideImage} className="project-image" onMouseEnter={handleHoverEvent} id="project1"></img>
 		<p className="project-description">
 			<b>Full Stack Ecommerce Application</b>
 			<br></br>
 			- HTML, CSS, JS, SQL -
 		</p>
-	</a>
+	</Link>
 	</div>
 	<div className="single-project">
-		<a href="./exploreMiami.html">
-		<img src={ExpMiamiWideImage} className="project-image" onMouseEnter={handleProjectHover} id="project2"></img>
+		<Link to="/exploremiami">
+		<img src={ExpMiamiWideImage} className="project-image" onMouseEnter={handleHoverEvent} id="project2"></img>
 		<p className="project-description">
 			<b>Front End Travel Application</b>
 			<br></br>
 			- HTML, CSS, JS, Third Party APIs -
 		</p>
-	</a>
+	</Link>
 	</div>
 
 	<div className="single-project">
-		<a href="./skullPatrol.html">
-		<img src={SPWideImage} className="project-image" onMouseEnter={handleProjectHover} id="project3"></img>
+		<Link to ="/skullpatrol">
+		<img src={SPWideImage} className="project-image" onMouseEnter={handleHoverEvent} id="project3"></img>
 		<p className="project-description">
 			<b>Full Stack DeFi Minting Application</b>
 			<br></br>
 			- HTML, CSS, JS, DeFi -
 		</p>
-	</a>
+	</Link>
 	</div>
 	<div className="navCard">
   <a href="#" id="nxt" onClick={next}>&raquo;</a>
