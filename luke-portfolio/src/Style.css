@@ -1,0 +1,718 @@
+/* background: rgb(255, 184, 52);
+box-shadow: -15px 15px 30px rgb(212, 153, 43),
+  -3px 4px 30px rgb(255, 203, 106); */
+
+* {
+  font-family: "Cormorant", serif !important;
+}
+
+html,
+body {
+  font-family: "Cormorant", serif !important;
+  background-color: rgb(19, 19, 19) !important;
+}
+
+.navbar {
+  color: white;
+}
+
+.appear {
+  animation: appear 2s ease-in;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.top-bar {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent !important;
+  padding: 0 20px;
+}
+
+.title {
+  text-align: center;
+}
+
+.myName {
+  font-family: "Cormorant", serif;
+  color: #ffffff;
+  text-shadow: rgb(0 0 0) -8px 5px 2px, rgb(35 35 35) 2px -1px 4px;
+}
+
+.my-title {
+  font-style: italic;
+  font-family: "Cormorant", serif;
+  color: #ffffff;
+}
+
+.links {
+  float: right;
+}
+
+.topbar-center-logo {
+  background: #ffffff;
+}
+
+.topbar-center-logo .menu {
+  background: transparent;
+}
+
+.topbar-center-logo .menu a {
+  color: #ffffff !important;
+  font-family: "Cormorant", serif;
+  font-size: 18px;
+}
+
+.project-description {
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+  opacity: 0;
+}
+
+.single-project:hover .project-description {
+  transition: opacity 1s, visibility 0.2s;
+  opacity: 1;
+}
+
+.project-view {
+  margin-top: 5%;
+}
+
+.projImage {
+  max-width: 150px;
+  max-height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40%;
+}
+
+.topbar-center-logo .top-bar-center {
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(0, 0, 0);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1181px) {
+  .menu {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+.my-projects {
+  font-family: "Fira Sans Condensed", sans-serif;
+  text-align: center;
+  letter-spacing: -2px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: rgb(255, 255, 255);
+  outline: none;
+  text-align: center;
+}
+
+.my-projects:hover {
+  font-variation-settings: "wght" 582;
+  letter-spacing: 3.5px;
+  text-shadow: black -1px 1px 2px;
+}
+
+.social-footer {
+  font-family: "Cormorant", serif !important;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3.5rem;
+  padding: 1rem;
+  background: rgb(24, 24, 24);
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.social-footer p {
+  padding-top: 25px;
+  font-family: "Cormorant", serif;
+  color: white;
+  font-size: 14px;
+}
+
+.social-footer .social-footer-icons li:last-of-type {
+  margin-right: 0;
+}
+
+.social-footer .social-footer-icons .fa {
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+
+.social-footer .social-footer-icons .fa:hover {
+  color: #4a4a4a;
+  transition: color 0.3s ease-in;
+}
+
+.footerLogo {
+  color: white;
+  font-family: "Cormorant", serif;
+  list-style: none;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.cont-space {
+  padding-top: 5%;
+}
+
+@media screen and (max-width: 700px) {
+  .options {
+    display: block !important;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+  }
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+  .selection {
+    max-width: 100px;
+    font-size: 12px !important;
+  }
+}
+
+.selection {
+  width: 150px;
+  font-family: "Cormorant", serif;
+  color: #ffffff;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: rgb(19, 19, 19);
+  box-shadow: -5px 7px 12px rgb(0 0 0), 3px -2px 20px rgb(31 31 31);
+}
+
+.selection:hover {
+  animation: colorful 3s infinite;
+}
+
+@keyframes colorful {
+  0% {
+    box-shadow: rgb(255, 0, 0) 0px 0px 12px;
+  }
+  10% {
+    box-shadow: rgb(255, 94, 0) 0px 0px 12px;
+  }
+  20% {
+    box-shadow: rgb(255, 238, 0) 0px 0px 12px;
+  }
+  30% {
+    box-shadow: rgb(43, 255, 0) 0px 0px 12px;
+  }
+  40% {
+    box-shadow: rgb(0, 255, 157) 0px 0px 12px;
+  }
+  50% {
+    box-shadow: rgb(0, 225, 255) 0px 0px 12px;
+  }
+  60% {
+    box-shadow: rgb(0, 140, 255) 0px 0px 12px;
+  }
+  70% {
+    box-shadow: rgb(0, 68, 255) 0px 0px 12px;
+  }
+  80% {
+    box-shadow: rgb(76, 0, 255) 0px 0px 12px;
+  }
+  90% {
+    box-shadow: rgb(255, 0, 191) 0px 0px 12px;
+  }
+  100% {
+    box-shadow: rgb(255, 0, 0) 0px 0px 12px;
+  }
+}
+
+.viewMore {
+  padding: 20px;
+  justify-content: center;
+}
+
+.enterProject:active {
+  box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+}
+
+.card {
+  margin: auto;
+  width: 190px;
+  height: 254px;
+  border-radius: 30px;
+  background: rgb(19, 19, 19);
+  box-shadow: -15px 15px 30px rgb(0, 0, 0), -20px 17px 30px rgb(32, 32, 32),
+    -3px 4px 20px rgb(53, 53, 53);
+}
+
+.lang {
+  font-size: 13px;
+  padding-top: 45px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.projectDisplay {
+  display: flex;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+
+.intro-container {
+  height: 250px !important;
+}
+
+body {
+  --color-grey: #000000;
+  --color-white: #ffffffc7;
+  --body-background-color: #b8b8b8;
+  background: var(--body-background-color);
+}
+
+#intro {
+  color: var(--color-grey);
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+}
+
+.navCard {
+  position: relative;
+  margin: auto;
+  padding-bottom: 70px;
+}
+
+#prev {
+  color: #ffffff !important;
+  padding: 10px;
+  border-radius: 5px;
+  background: rgb(19, 19, 19);
+  border: 1px solid rgb(19, 19, 19);
+  transition: all 0.3s;
+  box-shadow: -5px 7px 12px #000000, -1px 4px 12px #363636;
+}
+
+#nxt {
+  color: #ffffff !important;
+  padding: 10px;
+  border-radius: 5px;
+  background: rgb(19, 19, 19);
+  border: 1px solid rgb(19, 19, 19);
+  transition: all 0.3s;
+  box-shadow: -5px 7px 12px #000000, -1px 4px 12px #363636;
+}
+
+#contact-info .links {
+  display: flex;
+  min-width: 150px;
+  justify-content: space-between;
+}
+
+#contact-info a {
+  text-decoration: none;
+  color: var(--color-grey);
+  font-size: 2rem;
+}
+
+#contact-info .links a {
+  top: 0;
+  display: block;
+  position: relative;
+}
+#contact-info .links a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+}
+#contact-info .links a:hover::after {
+  --transformed-box-diagonal-length: 164%;
+  width: var(--transformed-box-diagonal-length);
+  left: calc((100% - var(--transformed-box-diagonal-length)) / 2);
+}
+
+#contact-info .links a div {
+  position: relative;
+  display: block;
+  width: 55px;
+  height: 55px;
+  transition: transform 0.3s;
+}
+
+#contact-info .links a:hover div {
+  transform: rotate(-35deg) skew(20deg);
+}
+
+.links a span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.links a:hover span:nth-child(5) {
+  transform: translate(20px, -20px);
+  opacity: 1;
+}
+
+.container {
+  font-family: "Cormorant", serif !important;
+  background-image: url("http://www.textures4photoshop.com/tex/thumbs/seamless-paper-texture-business-card-background-thumb47.jpg");
+  text-align: center;
+  max-width: 50%;
+  height: 400px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: -12px 9px 30px 2px #000000, -15px 10px 40px 2px #000000,
+    5px -4px 30px #2b2b2b;
+  animation: slide-in 1.5s forwards;
+  /* set initial position off-screen to the left */
+  transform: translateX(-100%);
+}
+
+@keyframes slide-in {
+  to {
+    transform: translateY(40%);
+  }
+}
+
+.contact {
+  padding-top: 100px;
+  font-family: "Cormorant", serif;
+  text-decoration: underline;
+  text-decoration-thickness: from-font;
+  text-shadow: -1px 2px 3px #888787, 1px -1px 2px #ffffff !important;
+}
+
+.social-contact {
+  list-style: none;
+  display: block;
+}
+
+.social-link {
+  color: #000000 !important;
+  text-decoration: none;
+  text-align: center;
+}
+
+i {
+  padding-right: 10px;
+}
+
+a {
+  font-family: "Cormorant", serif;
+  color: #000000 !important;
+}
+
+a:hover {
+  color: #1774ff !important;
+  font-weight: 600;
+}
+
+.moreContact {
+  display: block;
+  list-style: none;
+}
+
+.reachOut {
+  font-family: "Cormorant", serif;
+  padding-top: 80px;
+  font-style: italic;
+}
+
+.return-home {
+  margin: 0;
+  position: absolute;
+  left: 45%;
+  transform: translate(-0%, -400%);
+  animation: phasein 3s;
+}
+
+.back {
+  text-align: center;
+  padding-top: 200px;
+}
+
+@keyframes phasein {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.portrait-card {
+  transform: translate(-160%, 30%);
+  margin: auto;
+  width: 300px;
+  height: 400px;
+  border-radius: 30px;
+  box-shadow: -15px 15px 30px #000000, -15px -15px 30px #2b2b2b;
+}
+
+.Lmick {
+  font-family: "Old Standard TT", serif;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  font-size: 38px;
+  padding-top: 160px;
+  background-color: #000000;
+  color: transparent;
+  text-shadow: -1px 0px 3px rgb(0 127 255 / 59%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+.about-me {
+  color: white;
+  transform: translate(20%, -70%);
+  margin: auto;
+  width: 60%;
+  height: 400px;
+  text-align: center;
+}
+
+.my-intro {
+  color: white;
+  font-family: "Cormorant", serif;
+}
+
+.h {
+  border-bottom: 0.5px solid rgb(255, 255, 255);
+  color: white;
+}
+
+.skills {
+  padding-top: 70px;
+}
+
+.slider-wrapper {
+  display: flex;
+  animation: slide 10s linear infinite;
+}
+
+.slide {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+#skill-icon {
+  color: #ffffff;
+  font-size: 44px;
+  text-shadow: -5px 5px 5px #000000, 0px 0px 3px #000000;
+}
+
+.resume {
+  display: block;
+  color: white;
+}
+
+.head {
+  display: flex;
+}
+
+.location-address {
+  float: right;
+}
+
+.initials {
+  margin: 10px;
+}
+
+.personal-details {
+  margin: 10px;
+}
+
+.experience {
+  text-align: center;
+}
+
+.personal-item {
+  list-style: none;
+  display: list-item;
+}
+
+#professional {
+  border-bottom: 1.5px solid grey;
+}
+
+.work-experience {
+  display: table;
+}
+
+.job-title {
+  border-bottom: 0.5px solid grey;
+}
+
+.cool-nav {
+  font-family: sans-serif;
+  background-color: rgb(0, 0, 0);
+  margin: auto;
+  display: flex;
+  text-align: center;
+}
+
+.coolBtn {
+  margin: auto;
+  width: 100px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+}
+
+.single-project {
+  max-width: 400px;
+  padding: 30px;
+}
+
+.project-image {
+  border-radius: 15px;
+  box-shadow: black -15px 10px 30px, rgb(49, 49, 49) 5px 10px 30px;
+  opacity: 0.6;
+  transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
+}
+
+.single-project:hover .project-image {
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.55s ease-in-out;
+  -moz-transition: opacity 0.55s ease-in-out;
+  -webkit-transition: opacity 0.55s ease-in-out;
+  box-shadow: 3px 4px 10px rgb(44, 44, 44), -15px 10px 30px rgb(0, 0, 0);
+}
+
+.white {
+  color: white !important;
+}
+
+.icons i {
+  font-size: 3rem;
+  color: rgb(39, 39, 39);
+  text-shadow: black -2px 3px 5px;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.single-project:hover .icons i {
+  color: #fff;
+  cursor: pointer;
+}
+
+.tech-used {
+  display: flex;
+  justify-content: center;
+}
+
+.back {
+  padding: 20px;
+  justify-content: center;
+}
+
+.back-home {
+  margin-top: 35px;
+  font-family: "Cormorant", serif;
+  color: #ffffff;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: rgb(19, 19, 19);
+  box-shadow: -5px 7px 12px rgb(0 0 0), 3px -2px 20px rgb(31 31 31);
+}
+
+.computer-display {
+  padding-left: 10px;
+  max-width: 400px;
+  max-height: 400px;
+  margin: auto;
+}
