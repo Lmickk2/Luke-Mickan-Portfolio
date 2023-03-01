@@ -8,6 +8,7 @@ function About() {
                 <title>Luke Mickan | About</title>
             </Helmet>
         <div>
+          <div className="cont-space"></div>
           <div className="portrait">
             <div className="portrait-card">
             </div>
@@ -46,6 +47,7 @@ function About() {
             </div>
           </div>
         </div>
+        <div className="cont-space"></div>
         <BackHomeButton/>
         </div>
       );

@@ -55,6 +55,7 @@ body {
   font-family: "Cormorant", serif;
   color: #ffffff;
   text-shadow: rgb(0 0 0) -8px 5px 2px, rgb(35 35 35) 2px -1px 4px;
+  font-size: 44px;
 }
 
 .my-title {
@@ -110,29 +111,6 @@ body {
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
-}
-
-.burger {
-  display: none;
-  cursor: pointer;
-}
-
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: rgb(0, 0, 0);
-  margin: 5px;
-  transition: all 0.3s ease;
-}
-
-@media screen and (max-width: 1181px) {
-  .menu {
-    display: none;
-  }
-
-  .burger {
-    display: block;
-  }
 }
 
 .my-projects {
@@ -204,7 +182,7 @@ body {
 }
 
 .cont-space {
-  padding-top: 5%;
+  padding-top: 6%;
 }
 
 @media screen and (max-width: 700px) {
@@ -493,7 +471,6 @@ a:hover {
 
 .back {
   text-align: center;
-  padding-top: 200px;
 }
 
 @keyframes phasein {
@@ -514,8 +491,48 @@ a:hover {
   }
 }
 
+.portrait,
+.about-me {
+  display: inline-block;
+}
+
+.portrait {
+  vertical-align: top;
+}
+
+.about-me {
+  width: 40%;
+  margin-left: 10px;
+}
+
+.tech-used {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .icons i {
+   font-size: 30px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .computer-display,
+  .about-me {
+    display: block;
+    width: 100%;
+  }
+  
+  .about-me {
+    margin-top: 10px;
+  }
+  
+  .tech-used {
+    margin-top: 20px;
+  }
+}
+
 .portrait-card {
-  transform: translate(-160%, 30%);
   margin: auto;
   width: 300px;
   height: 400px;
@@ -523,29 +540,29 @@ a:hover {
   box-shadow: -15px 15px 30px #000000, -15px -15px 30px #2b2b2b;
 }
 
-.Lmick {
-  font-family: "Old Standard TT", serif;
-  color: white;
-  font-weight: 600;
-  text-align: center;
-  font-size: 38px;
-  padding-top: 160px;
-  background-color: #000000;
-  color: transparent;
-  text-shadow: -1px 0px 3px rgb(0 127 255 / 59%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
+.abt {
+  display: block;
+}
+
+
+@media only screen and (min-width: 900px) {
+
+  .portrait {
+    order: 1;
+    margin-right: 2rem;
+  }
+
+  .about-me {
+    order: 2;
+    width: 50%;
+  }
 }
 
 .about-me {
   color: white;
-  margin: auto;
-  width: 60%;
-  height: 400px;
-  text-align: center;
-  margin-top: -2%;
   float: right;
+  margin-right: 15px;
+  margin-bottom: 5px;
 }
 
 .my-intro {
@@ -608,6 +625,7 @@ a:hover {
 
 .personal-details {
   margin: 10px;
+  float: right;
 }
 
 .experience {
@@ -623,9 +641,9 @@ a:hover {
   border-bottom: 1.5px solid grey;
 }
 
-.work-experience {
+/* .work-experience {
   display: table;
-}
+} */
 
 .job-title {
   border-bottom: 0.5px solid grey;
@@ -699,7 +717,6 @@ a:hover {
 }
 
 .back {
-  padding: 20px;
   justify-content: center;
 }
 
@@ -720,4 +737,12 @@ a:hover {
   max-width: 400px;
   max-height: 400px;
   margin: auto;
+}
+
+.details {
+  margin-top: -25px !important;
+}
+
+.deployed {
+  color: white !important;
 }
