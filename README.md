@@ -10,7 +10,7 @@
 
 ## Preview
 
-<img src="./src/images/Demo.png"/>
+<img src="./luke-portfolio/src/images/Demo.png"/>
 
 ## Author
 
