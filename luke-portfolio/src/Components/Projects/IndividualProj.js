@@ -21,25 +21,16 @@ function IndividualProj(props) {
           </div>
         </div>
 		    </div>
-        <div className="tech-used appear">
-          <div className="icons">
-            <i className="devicon-css3-plain" id="css"></i>
-
-            <i className="devicon-html5-plain-wordmark" id="html"></i>
-
-            <i className="devicon-javascript-plain" id="js"></i>
-
-            <i className="devicon-nodejs-plain" id="node"></i>
-
-            <i className="devicon-react-original" id="react"></i>
-      
-        </div>
-      </div>
-        <ul className="deployed-links">
-          <li><a className="deployed" href= {props.repo}>View Repository</a></li>
+    <footer className="social-footer">
+    <div className="deployed-footer">
+      <ul className="menu simple">
+      <li><a className="deployed" href= {props.repo}>View Repository</a></li>
           <li><a className="deployed" href= {props.deployed}>View Deployed Site</a></li>
-          </ul>
+      </ul>
     </div>
+  </footer>
+    </div>
+    
   );
 }
 
