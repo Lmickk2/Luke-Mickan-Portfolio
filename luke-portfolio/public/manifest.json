@@ -1,21 +1,11 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Luke Portfolio",
+  "name": "Luke Mickan Portfolio",
   "icons": [
     {
-      "src": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3D%2522lm%2Blogo%2522&psig=AOvVaw2FZ03Zl3XzNTxodwytxAQI&ust=1677366843218000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCMi3icmkr_0CFQAAAAAdAAAAABAE",
+      "src": "./src/images/Demo.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
     }
   ],
   "start_url": ".",
