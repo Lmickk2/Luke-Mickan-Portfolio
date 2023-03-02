@@ -10,7 +10,7 @@ function Contact() {
           <div className="container">
             <h1 className="contact">Luke Mickan</h1>
             <ul className="social-contact">
-              <li className="social-link"><i className="fa"></i><a href="mailto:Lukemickan21@icloud.com">Lukemickan21@icloud.com </a></li>
+            <li class="social-link"><i class="fa fa-envelope"></i><a href = "mailto:Lukemickan21@icloud.com">Lukemickan21@icloud.com </a></li>
             </ul>
             <div className="footIcons">
               <ul className="moreContact">
