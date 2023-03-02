@@ -24,8 +24,9 @@ return (
   
   <Router>
     <div className="App">
+  
       <Routes>
-        <Route path="/" element={<Home />} />
+        
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
@@ -33,6 +34,7 @@ return (
         <Route path="/skullpatrol" element={<SkullPatrol />} />
         <Route path="/exploremiami" element={<ExploreMiami />} />
         <Route path="/knickknack" element={<KnickKnack />} />
+        <Route path="*" element={<Home />} />
       </Routes>
     </div>
   </Router>
