@@ -13,6 +13,10 @@ function Icons() {
 			  <i className="devicon-javascript-plain" id="js"></i>
 
 			  <i className="devicon-nodejs-plain" id="node"></i>
+
+			  <i className="devicon-mongodb-plain-wordmark" id="mongo"></i>
+
+			  <i className="devicon-graphql-plain-wordmark" id="graphql"></i>
 		  
 			  <i className="devicon-github-original" id="github"></i>
 		

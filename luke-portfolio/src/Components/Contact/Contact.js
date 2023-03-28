@@ -7,7 +7,7 @@ function Contact() {
             <Helmet>
                 <title>Luke Mickan | Contact</title>
             </Helmet>
-          <div className="container">
+          <div className="contact-card">
             <h1 className="contact">Luke Mickan</h1>
             <ul className="social-contact">
             <li class="social-link"><i class="fa fa-envelope"></i><a href = "mailto:Lukemickan21@icloud.com">Lukemickan21@icloud.com </a></li>
@@ -20,7 +20,6 @@ function Contact() {
               <p className="reachOut">- Feel Free to Contact Me at Any of the Links Listed Above -</p>
             </div>
           </div>
-          <div className="cont-space"></div>
           <div className="cont-space"></div>
         <BackHomeButton/>
         </div>

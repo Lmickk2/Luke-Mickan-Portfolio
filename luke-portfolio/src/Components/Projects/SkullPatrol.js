@@ -24,6 +24,8 @@ function SkullPatrol() {
             <i className="devicon-nodejs-plain" id="node"></i>
 
             <i className="devicon-react-original" id="react"></i>
+
+            <i className="devicon-css3-plain" id="css"></i>
       
         </div>
       </div>

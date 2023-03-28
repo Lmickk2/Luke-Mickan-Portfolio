@@ -16,6 +16,7 @@ import IndividualProj from "./Components/Projects/IndividualProj";
 import ExploreMiami from "./Components/Projects/ExploreMiami";
 import KnickKnack from "./Components/Projects/KnickKnack";
 import Resume from "./Components/Resume/Resume";
+import CodeGenie from "./Components/Projects/CodeGenie";
 
 
 function App() {
@@ -32,6 +33,7 @@ return (
         <Route path="/projects" element={<Projects />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/skullpatrol" element={<SkullPatrol />} />
+        <Route path="/codegenie" element={<CodeGenie />} />
         <Route path="/exploremiami" element={<ExploreMiami />} />
         <Route path="/knickknack" element={<KnickKnack />} />
         <Route path="*" element={<Home />} />
