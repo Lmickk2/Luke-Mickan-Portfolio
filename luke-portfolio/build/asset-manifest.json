@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.6e29bbfa.css",
-    "main.js": "/static/js/main.2ac1ac05.js",
-    "static/js/787.4581defb.chunk.js": "/static/js/787.4581defb.chunk.js",
-    "static/media/MiamiComp.png": "/static/media/MiamiComp.6c2c1ff8021d0ad3dfb4.png",
-    "static/media/KKComp.png": "/static/media/KKComp.45d13b6757c6ae9b5e11.png",
-    "static/media/KK-Wide.png": "/static/media/KK-Wide.1f297c44e98555233908.png",
-    "static/media/EXP-Wide.png": "/static/media/EXP-Wide.bcc81eb6121a84b95976.png",
-    "static/media/SkullComp.png": "/static/media/SkullComp.a8ce6d2286fbfeec5385.png",
-    "static/media/SP-Wide.png": "/static/media/SP-Wide.ca7b0c6ff4b8799aa576.png",
-    "static/media/GenieComp.png": "/static/media/GenieComp.f41c4812b97cd37147ca.png",
-    "static/media/Genie-Wide.png": "/static/media/Genie-Wide.798ecb77b0e65cbf264f.png",
-    "static/media/luke-photo.png": "/static/media/luke-photo.1d26430e2aee88a3715a.png",
-    "index.html": "/index.html",
-    "main.6e29bbfa.css.map": "/static/css/main.6e29bbfa.css.map",
-    "main.2ac1ac05.js.map": "/static/js/main.2ac1ac05.js.map",
-    "787.4581defb.chunk.js.map": "/static/js/787.4581defb.chunk.js.map"
+    "main.css": "/Luke-Mickan-Portfolio/static/css/main.6e29bbfa.css",
+    "main.js": "/Luke-Mickan-Portfolio/static/js/main.a09446fe.js",
+    "static/js/787.4581defb.chunk.js": "/Luke-Mickan-Portfolio/static/js/787.4581defb.chunk.js",
+    "static/media/MiamiComp.png": "/Luke-Mickan-Portfolio/static/media/MiamiComp.6c2c1ff8021d0ad3dfb4.png",
+    "static/media/KKComp.png": "/Luke-Mickan-Portfolio/static/media/KKComp.45d13b6757c6ae9b5e11.png",
+    "static/media/KK-Wide.png": "/Luke-Mickan-Portfolio/static/media/KK-Wide.1f297c44e98555233908.png",
+    "static/media/EXP-Wide.png": "/Luke-Mickan-Portfolio/static/media/EXP-Wide.bcc81eb6121a84b95976.png",
+    "static/media/SkullComp.png": "/Luke-Mickan-Portfolio/static/media/SkullComp.a8ce6d2286fbfeec5385.png",
+    "static/media/SP-Wide.png": "/Luke-Mickan-Portfolio/static/media/SP-Wide.ca7b0c6ff4b8799aa576.png",
+    "static/media/GenieComp.png": "/Luke-Mickan-Portfolio/static/media/GenieComp.f41c4812b97cd37147ca.png",
+    "static/media/Genie-Wide.png": "/Luke-Mickan-Portfolio/static/media/Genie-Wide.798ecb77b0e65cbf264f.png",
+    "static/media/luke-photo.png": "/Luke-Mickan-Portfolio/static/media/luke-photo.1d26430e2aee88a3715a.png",
+    "index.html": "/Luke-Mickan-Portfolio/index.html",
+    "main.6e29bbfa.css.map": "/Luke-Mickan-Portfolio/static/css/main.6e29bbfa.css.map",
+    "main.a09446fe.js.map": "/Luke-Mickan-Portfolio/static/js/main.a09446fe.js.map",
+    "787.4581defb.chunk.js.map": "/Luke-Mickan-Portfolio/static/js/787.4581defb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6e29bbfa.css",
-    "static/js/main.2ac1ac05.js"
+    "static/js/main.a09446fe.js"
   ]
 }
