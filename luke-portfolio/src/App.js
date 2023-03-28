@@ -9,6 +9,7 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
+  HashRouter,
   Navigate
 } from "react-router-dom";
 import SkullPatrol from "./Components/Projects/SkullPatrol";
@@ -23,7 +24,7 @@ function App() {
 
 return (
   
-  <Router>
+  <HashRouter>
     <div className="App">
   
       <Routes>
@@ -39,7 +40,7 @@ return (
         <Route path="*" element={<Home />} />
       </Routes>
     </div>
-  </Router>
+    </HashRouter>
 );
 }
 
