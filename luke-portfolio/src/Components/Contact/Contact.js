@@ -15,7 +15,7 @@ function Contact() {
             <div className="footIcons">
               <ul className="moreContact">
                 <li className="social-link"><i className="fab fa-github" /><a href="https://github.com/Lmickk2">Github </a></li>
-                <li className="social-link"><i className="fab fa-linkedin-in" /><a href="https://www.linkedin.com/in/luke-mickan-4712a9172/">LinkedIn </a></li>
+                <li className="social-link"><i className="fab fa-linkedin-in" /><a href="https://www.linkedin.com/in/luke-mickan/">LinkedIn </a></li>
               </ul>
               <p className="reachOut">- Feel Free to Contact Me at Any of the Links Listed Above -</p>
             </div>

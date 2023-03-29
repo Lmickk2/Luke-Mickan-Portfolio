@@ -8,7 +8,7 @@ function Footer() {
     </div>
     <div className="social-footer-icons">
       <ul className="menu simple">
-        <li><Link to="https://www.linkedin.com/in/luke-mickan-4712a9172/"><i className="fab fa-linkedin-in" id="footer-icon" aria-hidden="true"></i></Link></li>
+        <li><Link to="https://www.linkedin.com/in/luke-mickan/"><i className="fab fa-linkedin-in" id="footer-icon" aria-hidden="true"></i></Link></li>
         <li><Link to="https://github.com/Lmickk2"><i className="fab fa-github" id="footer-icon" aria-hidden="true"></i></Link></li>
       </ul>
     </div>

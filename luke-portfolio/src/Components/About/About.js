@@ -21,7 +21,7 @@ function About() {
           </div>
           <div className="about-me appear">
             <h2 className="my-intro h">About Me</h2>
-            <p className="my-intro">Hey! I'm Luke, a lifelong artist who stumbled into the world of software engineering. My artistic background keeps me creatively driven, and very passsionate when it comes to producing stunning, functional, and responsive web applications.  </p>
+            <p className="my-intro">Hey! I'm Luke, a lifelong artist who stumbled into the world of software engineering. My artistic background keeps me creatively driven, and very passionate when it comes to producing stunning, functional, and responsive web applications.  </p>
             <div className="skills">
               <h2 className="my-intro h">Skills</h2>
               <p className="my-intro">With a very strong understanding, and passion for React, CSS, and vanilla Javascript, I also understand the fundamentals of many other technologies such as:</p>
