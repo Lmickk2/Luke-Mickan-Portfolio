@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import SPWideImage from "../../images/SP-Wide.png";
 import KKWideImage from "../../images/KK-Wide.png";
-import ExpMiamiWideImage from "../../images/EXP-Wide.png";
+import TheEggWide from "../../images/TheEgg-Wide.png"
 import GenieWide from "../../images/Genie-Wide.png"
 
 function Cards() {
@@ -42,7 +42,7 @@ function Cards() {
         skills = ["html", "css", "js", "sql", "node", "github", "hbs"];
         break;
       case "project3":
-        skills = ["html", "css", "js", "github"];
+        skills = ["react", "css", "js", "graphql", "node", "github", "mongo"];
         break;
       case "project4":
         skills = ["html", "css", "js", "react", "node"];
@@ -135,16 +135,16 @@ function Cards() {
         </Link>
       </div>
       <div className="single-project">
-        <Link to="/exploremiami">
+        <Link to="/theegg">
           <img
-            src={ExpMiamiWideImage}
+            src={TheEggWide}
             className="project-image"
             onMouseEnter={handleHoverEvent}
             id="project3"
           ></img>
           <p className="project-description">
-            <b>Front End Travel Application</b>
-            <br></br>- HTML, CSS, JS, Third Party APIs -
+            <b>Full Stack Restaurant Application</b>
+            <br></br>- MERN Stack, CSS, GraphQL -
           </p>
         </Link>
       </div>

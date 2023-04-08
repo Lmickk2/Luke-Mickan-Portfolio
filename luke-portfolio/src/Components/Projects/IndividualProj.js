@@ -20,8 +20,8 @@ function IndividualProj(props) {
               </div>
 
               <div className="project-links">
-                <Link to={props.deployLink} className="project-link">View Deployed Application</Link>
-                <Link to ={props.repoLink} className="project-link">View Github Repository</Link>
+                <Link to={props.deployed} className="project-link">View Deployed Application</Link>
+                <Link to ={props.repo} className="project-link">View Github Repository</Link>
               </div>
             </div>
           </div>

@@ -2,9 +2,9 @@ import IndividualProj from "./IndividualProj";
 import GenieComp from "../../images/GenieComp.png";
 import BackHomeButton from "../BackHomeButton";
 
-const title = "Explore Miami";
+const title = "Code Genie";
 const description =
-  "A traditional coding forum with an A.I. twist. By integrating a chatbot powered by ChatGPT, users can use GenieTokens to ask questions to the Genie to receive an instant response. GenieTokens are earned by answering other users questions on the forum";
+  "A traditional coding forum with an A.I. twist. By integrating a chatbot powered by ChatGPT, users can use GenieTokens to ask questions to the Genie to receive an instant response. GenieTokens are earned by answering other users questions on the forum.";
 const techDesc =
   "Code Genie was created with the MERN stack. The ChatGPT API was implemented to power the chatbot, and the design was created with raw CSS.";
 const repo = "https://github.com/JuanSFL/Code_Genie";

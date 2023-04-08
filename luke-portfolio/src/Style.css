@@ -893,3 +893,13 @@ a:hover {
   display: block !important;
   text-align: center !important;
 }
+
+.no-project {
+  margin-top: 20%;
+  color: white;
+}
+
+.no-project h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
