@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function IndividualProj(props) {
   return (
     <div className="indv-project appear">
@@ -18,8 +20,8 @@ function IndividualProj(props) {
               </div>
 
               <div className="project-links">
-                <a href={props.deployLink} className="project-link">View Deployed Application</a>
-                <a href={props.repoLink} className="project-link">View Github Repository</a>
+                <Link to={props.deployLink} className="project-link">View Deployed Application</Link>
+                <Link to ={props.repoLink} className="project-link">View Github Repository</Link>
               </div>
             </div>
           </div>
