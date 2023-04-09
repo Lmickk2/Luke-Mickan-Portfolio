@@ -8,7 +8,7 @@ const description =
 const techDesc =
   "A React application with a lot of DeFi complexity behind it. Users are taken to landing page with the option to connect their DeFi wallet, and proceed with the minting process through a contract connection.";
 const repo = "https://github.com/Lmickk2/SP-Minting-Dapp";
-const deployed = "/404";
+const deployed = "https://mintskullpatrol.com/";
 
 function SkullPatrol() {
   return (
