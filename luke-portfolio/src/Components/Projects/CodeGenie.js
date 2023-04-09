@@ -39,8 +39,6 @@ function CodeGenie() {
         </div>
       </div>
       <BackHomeButton />
-      <div className="cont-space"></div>
-      <div className="cont-space"></div>
     </div>
   );
 }

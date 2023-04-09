@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet';
 
 function Projects() {
     return (
-        <div>
+        <div className="all-projects">
             <Helmet>
                 <title>Luke Mickan | Projects</title>
             </Helmet>

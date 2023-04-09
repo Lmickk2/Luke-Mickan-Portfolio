@@ -786,6 +786,12 @@ a:hover {
   font-size: 16px;
 }
 
+@media screen and (max-width:1024px) {
+  .all-projects {
+    padding-bottom: 5% !important;
+  }
+}
+
 .projects {
   display: flex;
   justify-content: center;
@@ -840,6 +846,12 @@ a:hover {
 
 .back {
   justify-content: center;
+}
+
+@media screen and (max-width:1024px) {
+  .back-home {
+    margin-bottom: 20% !important;
+  }
 }
 
 .back-home {

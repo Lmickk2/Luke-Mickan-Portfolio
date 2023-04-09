@@ -18,7 +18,6 @@ function IndividualProj(props) {
                 <h2 className="my-intro h">Technology Used</h2>
                 <p className="my-intro">{props.techDesc}</p>
               </div>
-
               <div className="project-links">
                 <Link to={props.deployed} className="project-link">View Deployed Application</Link>
                 <Link to ={props.repo} className="project-link">View Github Repository</Link>
