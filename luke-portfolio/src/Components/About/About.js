@@ -21,10 +21,10 @@ function About() {
           </div>
           <div className="about-me appear">
             <h2 className="my-intro h">About Me</h2>
-            <p className="my-intro">Hey! I'm Luke, a lifelong artist who stumbled into the world of software engineering. My artistic background keeps me creatively driven, and very passionate when it comes to producing stunning, functional, and responsive web applications.  </p>
+            <p className="my-intro">As a web developer with a background in both physical and digital art, I combine a unique blend of creativity and technical expertise to deliver high-quality and responsive designs. With a sharp eye for design and the ability to think outside the box, I approach web development as both an art and a science. Whether I am developing a sleek and intuitive user interface or optimizing website performance, I strive to exceed the expectations of both users and clients. I am passionate about leveraging technology to create engaging and user-friendly web experiences, and am dedicated to staying up-to-date with the latest web development trends and techniques.  </p>
             <div className="skills">
               <h2 className="my-intro h">Skills</h2>
-              <p className="my-intro">With a very strong understanding, and passion for React, CSS, and vanilla Javascript, I also understand the fundamentals of many other technologies such as:</p>
+              {/* <p className="my-intro">With a very strong understanding, and passion for React, HTML, CSS, Javascript, I also understand the fundamentals of many other technologies such as:</p> */}
               <div className="icons">
                   <div className="slide">
                     <i className="devicon-css3-plain" id="skill-icon" />

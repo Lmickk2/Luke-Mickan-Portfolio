@@ -4,7 +4,6 @@ function Footer() {
   return (
     <footer className="social-footer">
     <div className="social-footer-left">
-      <p>Created by: Luke Mickan</p>
     </div>
     <div className="social-footer-icons">
       <ul className="menu simple">

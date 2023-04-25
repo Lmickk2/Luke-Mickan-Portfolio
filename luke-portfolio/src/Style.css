@@ -28,7 +28,7 @@ body {
 }
 
 .appear {
-  animation: appear 2s ease-in;
+  animation: appear 1.5s ease-in;
 }
 
 @keyframes appear {
@@ -67,6 +67,7 @@ body {
   color: #ffffff;
   text-shadow: rgb(0 0 0) -8px 5px 2px, rgb(35 35 35) 2px -1px 4px;
   font-size: 44px;
+  margin-top: 0.5em;
 }
 
 .my-title {
