@@ -8,7 +8,7 @@ const description =
 const techDesc =
   "Code Genie was created with the MERN stack. The ChatGPT API was implemented to power the chatbot, and the design was created with raw CSS.";
 const repo = "https://github.com/JuanSFL/Code_Genie";
-const deployed = "https://glacial-beyond-25840.herokuapp.com/"
+const deployed = "https://enigmatic-everglades-31761.herokuapp.com/"
 
 function CodeGenie() {
   return (
