@@ -4,7 +4,7 @@ import BackHomeButton from "../BackHomeButton";
 
 const title = "Knick Knack";
 const description =
-  "An E-commerce application built for users to find and purchase items from all around the world!";
+  "Knick Knack is a responsive e-commerce app that allows users to browse and purchase a variety of items. Built with Handlebars and CSS, the app delivers a strong and intuitive user experience. Users can easily add items to their cart and checkout securely using the Stripe API integration. Despite being an earlier project, Knick Knack remains a robust and reliable e-commerce application that offers a convenient and secure shopping experience.";
 const techDesc =
   "Full Stack application utilizing a SQL database on the backend to store product details and user information. Stripe API used to simplify the checkout process.";
 const repo = "https://github.com/Lmickk2/UM-Project-2";

@@ -4,7 +4,6 @@ function IndividualProj(props) {
   return (
     <div className="indv-project appear">
       <div className="cont-space"></div>
-      <div className="cont-space"></div>
       <div className="abt">
         <div className="portrait">
           <img src={props.image} className="computer-display"></img>
