@@ -4,7 +4,7 @@ import BackHomeButton from "../BackHomeButton";
 
 const title = "Skull Patrol";
 const description =
-  "An application that allows a user to mint an NFT by connecting their MetaMask wallet.";
+  "Venturing into the emerging Web3 space, I took on multiple roles in project creation, including coding, marketing, and networking. This diverse skill setultimately enabled me to achieve success, culminating in a sold-out collection and a wealth of experience. Through this project, I acquired a range of skills and knowledge in various areas, including cryptocurrency, blockchain technology, and decentralized finance, among others.";
 const techDesc =
   "A React application with a lot of DeFi complexity behind it. Users are taken to landing page with the option to connect their DeFi wallet, and proceed with the minting process through a contract connection.";
 const repo = "https://github.com/Lmickk2/SP-Minting-Dapp";

@@ -6,7 +6,7 @@ const title = "Knick Knack";
 const description =
   "An E-commerce application built for users to find and purchase items from all around the world!";
 const techDesc =
-  "Full Stack application utilizing a SQL database on the backend to store product details, user information, tag ids, etc...";
+  "Full Stack application utilizing a SQL database on the backend to store product details and user information. Stripe API used to simplify the checkout process.";
 const repo = "https://github.com/Lmickk2/UM-Project-2";
 const deployed = "/404"
 

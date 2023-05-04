@@ -4,7 +4,7 @@ import BackHomeButton from "../BackHomeButton";
 
 const title = "The Egg Cafe";
 const description =
-  "Built for the thousands of monthly visitors to The Egg restaurants in North Carolina. Users can navigate to view menus, locations, and send in questions through the contact page!";
+  "As the sole developer of The Egg Restaurants website in North Carolina, I designed and built a user-friendly platform using the MERN stack. Through theimplementation of React and CSS, I created a responsive and intuitive interface that offers users access to all the essential information, including menus, locations, and contact details. To store and display menu items, I utilized MongoDB and GraphQL, which allowed for efficient and effective data management.";
 const techDesc =
   "A MERN Stack app that utilizes MongoDB and Express on the server-side to store all menu items, as well as a React front end, and raw CSS to provide users with a responsive and intuitive interface.";
 const repo = "https://github.com/Lmickk2/Vacation-Planner-Project";

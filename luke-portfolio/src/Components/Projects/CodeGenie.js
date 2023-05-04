@@ -4,7 +4,7 @@ import BackHomeButton from "../BackHomeButton";
 
 const title = "Code Genie";
 const description =
-  "A traditional coding forum with an A.I. twist. By integrating a chatbot powered by ChatGPT, users can use GenieTokens to ask questions to the Genie to receive an instant response. GenieTokens are earned by answering other users questions on the forum.";
+  "In pursuit of utilizing the cutting-edge Chat GPT API in a project, I co-founded Code Genie with my team. We created a vibrant online community where developers and other tech enthusiasts can engage in knowledge-sharing and troubleshooting. My primary responsibility was the front-end development, where I utilized my expertise in React, CSS, and GraphQL to build a user-friendly and aesthetically pleasing UI/UX. Moreover, I integrated an AI chatbot into the platform, providing quick and accurate responses to users' inquiries.";
 const techDesc =
   "Code Genie was created with the MERN stack. The ChatGPT API was implemented to power the chatbot, and the design was created with raw CSS.";
 const repo = "https://github.com/JuanSFL/Code_Genie";
