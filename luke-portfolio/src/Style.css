@@ -642,6 +642,9 @@ a {
     order: 2;
     width: 50%;
   }
+  #footer-icon {
+    margin-right: 0em !important;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -912,6 +915,7 @@ a {
   text-align: left;
   width: 60%;
   margin-top: 1.5em;
+  margin-left: 1.2em;
 }
 
 .about-proj h2 {
