@@ -5,7 +5,7 @@
 html,
 body {
   font-family: "Cormorant", serif !important;
-  background-color: rgb(19, 19, 19) !important;
+  background-color: rgb(223, 223, 223) !important;
 }
 
 @media screen and (min-width: 1440px) {
@@ -15,7 +15,9 @@ body {
   }
 }
 
-.fa, .far, .fas {
+.fa,
+.far,
+.fas {
   font-family: "Font Awesome 5 Free" !important;
 }
 
@@ -64,8 +66,8 @@ body {
 
 .myName {
   font-family: "Cormorant", serif;
-  color: #ffffff;
-  text-shadow: rgb(0 0 0) -8px 5px 2px, rgb(35 35 35) 2px -1px 4px;
+  color: #303030;
+  text-shadow: rgb(167, 167, 167) -2px 2px 2px;
   font-size: 44px;
   margin-top: 0.5em;
 }
@@ -73,7 +75,7 @@ body {
 .my-title {
   font-style: italic;
   font-family: "Cormorant", serif;
-  color: #ffffff;
+  color: #303030;
 }
 
 .links {
@@ -95,7 +97,7 @@ body {
 }
 
 .project-description {
-  color: white;
+  color: #303030;
   text-align: center;
   margin-top: 15px;
   opacity: 0;
@@ -149,7 +151,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 3.5rem;
-  background: rgb(24, 24, 24);
+  background: transparent;
   display: flex;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -160,8 +162,10 @@ body {
 }
 
 #footer-icon {
-  color: white !important;
-  font-size: 24px;
+  font-size: 32px;
+  color: rgb(240, 240, 240);
+  text-shadow: -1px 1px 4px #838383;
+  margin-right: 0.5em;
 }
 
 .social-footer p {
@@ -223,54 +227,40 @@ body {
 }
 
 .selection {
-  width: 150px;
+  width: 11em;
+  height: 3.5em;
   font-family: "Cormorant", serif;
-  color: #ffffff;
-  padding: 0.7em 1.7em;
-  font-size: 18px;
-  border-radius: 0.5em;
-  background: rgb(19, 19, 19);
-  box-shadow: -5px 7px 12px rgb(0 0 0), 3px -2px 20px rgb(31 31 31);
+  border-radius: 30em;
+  font-size: 15px;
+  font-family: inherit;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.selection::before {
+  content: "";
+  width: 0;
+  height: 3.5em;
+  border-radius: 30em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #0f9fd8 0%, #3096c5 100%);
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.selection:hover::before {
+  width: 11em;
+  color: white;
 }
 
 .selection:hover {
-  animation: colorful 3s infinite;
-}
-
-@keyframes colorful {
-  0% {
-    box-shadow: rgb(255, 0, 0) 0px 0px 12px;
-  }
-  10% {
-    box-shadow: rgb(255, 94, 0) 0px 0px 12px;
-  }
-  20% {
-    box-shadow: rgb(255, 238, 0) 0px 0px 12px;
-  }
-  30% {
-    box-shadow: rgb(43, 255, 0) 0px 0px 12px;
-  }
-  40% {
-    box-shadow: rgb(0, 255, 157) 0px 0px 12px;
-  }
-  50% {
-    box-shadow: rgb(0, 225, 255) 0px 0px 12px;
-  }
-  60% {
-    box-shadow: rgb(0, 140, 255) 0px 0px 12px;
-  }
-  70% {
-    box-shadow: rgb(0, 68, 255) 0px 0px 12px;
-  }
-  80% {
-    box-shadow: rgb(76, 0, 255) 0px 0px 12px;
-  }
-  90% {
-    box-shadow: rgb(255, 0, 191) 0px 0px 12px;
-  }
-  100% {
-    box-shadow: rgb(255, 0, 0) 0px 0px 12px;
-  }
+  color: white;
 }
 
 .viewMore {
@@ -288,8 +278,7 @@ body {
   height: 254px;
   border-radius: 30px;
   background: rgb(19, 19, 19);
-  box-shadow: -15px 15px 30px rgb(0, 0, 0), -20px 17px 30px rgb(32, 32, 32),
-    -3px 4px 20px rgb(53, 53, 53);
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
 }
 
 .lang {
@@ -308,7 +297,6 @@ body {
   height: 250px !important;
 }
 
-
 #intro {
   color: var(--color-grey);
   position: absolute;
@@ -321,27 +309,25 @@ body {
 .navCard {
   position: relative;
   margin: auto;
-  padding-bottom: 70px;
+  padding-bottom: 120px;
 }
 
 #prev {
-  color: #ffffff !important;
+  color: #353535 !important;
   padding: 10px;
   border-radius: 5px;
-  background: rgb(19, 19, 19);
-  border: 1px solid rgb(19, 19, 19);
+  border: none;
   transition: all 0.3s;
-  box-shadow: -5px 7px 12px #000000, -1px 4px 12px #363636;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
 }
 
 #nxt {
-  color: #ffffff !important;
+  color: #353535 !important;
   padding: 10px;
   border-radius: 5px;
-  background: rgb(19, 19, 19);
-  border: 1px solid rgb(19, 19, 19);
+  border: none;
   transition: all 0.3s;
-  box-shadow: -5px 7px 12px #000000, -1px 4px 12px #363636;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
 }
 
 #contact-info .links {
@@ -407,6 +393,7 @@ body {
 @media screen and (max-width: 700px) {
   .contact-card {
     max-width: 90% !important;
+    height: 20em !important;
     margin-top: 20% !important;
   }
   .contact {
@@ -415,11 +402,10 @@ body {
 }
 @media screen and (min-width: 701px) and (max-width: 1024px) {
   .contact-card {
-  max-width: 70% !important;
-  margin-top: 20% !important;
+    max-width: 70% !important;
+    margin-top: 20% !important;
   }
-  }
-
+}
 
 .contact-card {
   font-family: "Cormorant", serif !important;
@@ -429,8 +415,7 @@ body {
   height: 25rem;
   margin: auto;
   border-radius: 10px;
-  box-shadow: -12px 9px 30px 2px #000000, -15px 10px 40px 2px #000000,
-    5px -4px 30px #2b2b2b;
+  box-shadow: 6px 6px 12px #a3a3a3, -6px -6px 12px #ffffff;
   animation: slide-in 1.5s forwards;
   margin-top: 10%;
   transform: translateX(-100%);
@@ -444,9 +429,8 @@ body {
 
 .contact {
   padding-top: 100px;
+  color: #303030 !important;
   font-family: "Cormorant", serif;
-  text-decoration: underline;
-  text-decoration-thickness: from-font;
   text-shadow: -1px 2px 3px #888787, 1px -1px 2px #ffffff !important;
 }
 
@@ -456,7 +440,7 @@ body {
 }
 
 .social-link {
-  color: #000000 !important;
+  color: #303030 !important;
   text-decoration: none;
   text-align: center;
 }
@@ -467,12 +451,7 @@ i {
 
 a {
   font-family: "Cormorant", serif;
-  color: #000000 !important;
-}
-
-a:hover {
-  color: #1774ff !important;
-  font-weight: 600;
+  color: #303030 !important;
 }
 
 .moreContact {
@@ -516,14 +495,14 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: rgb(14, 14, 14);
+  background-color: rgb(212, 212, 212);
 }
 
 .project-links > a {
-  color: white !important;
+  color: #303030 !important;
+  font-family: "Aoboshi One", serif !important;
+  font-size: 14px;
 }
-
-
 
 @keyframes phasein {
   0% {
@@ -563,7 +542,7 @@ a:hover {
 
 @media (max-width: 900px) {
   .icons i {
-   font-size: 30px !important;
+    font-size: 30px !important;
   }
 }
 
@@ -571,15 +550,33 @@ a:hover {
   .computer-display,
   .about-me {
     display: block;
+    position: inherit !important;
     width: 100%;
   }
-  
+  .computer-display {
+    right: 0% !important;
+    max-width: 300px !important;
+    max-height: 300px !important;
+    margin: auto;
+  }
+  .about-proj {
+    display: block;
+    position: inherit !important;
+    width: 90% !important;
+    margin: auto !important;
+    text-align: center !important;
+    margin-top: 3em !important;
+  }
+
   .about-me {
     margin-top: 10px;
   }
-  
+
   .tech-used {
     margin-top: 20px;
+  }
+  .onProj {
+    position: inherit !important;
   }
 }
 
@@ -589,7 +586,7 @@ a:hover {
   width: 300px;
   height: 400px;
   border-radius: 30px;
-  box-shadow: -15px 15px 30px #000000, -15px -15px 30px #2b2b2b;
+  box-shadow: 6px 6px 12px #969696, -6px -6px 12px #ffffff;
 }
 
 .my-picture {
@@ -599,12 +596,12 @@ a:hover {
 .signature {
   margin-top: -10px;
   font-size: 38px;
-  font-family: 'Homemade Apple', cursive !important;
+  font-family: "Homemade Apple", cursive !important;
   transform: translateY(100px);
-  color: white;
+  color: #303030;
   animation: signing 1s linear;
-  text-shadow: -5px 7px 2px black,
-  1px 2px 1px rgba(255, 255, 255, 0.486) !important;
+  text-shadow: -5px 7px 2px rgb(197, 197, 197),
+    1px 2px 1px rgba(255, 255, 255, 0.486) !important;
   font-style: italic;
 }
 
@@ -630,9 +627,7 @@ a:hover {
   display: block;
 }
 
-
 @media only screen and (min-width: 900px) {
-
   .portrait {
     order: 1;
     margin-right: 2rem;
@@ -645,7 +640,6 @@ a:hover {
 }
 
 @media screen and (max-width: 1000px) {
-
   .my-section {
     text-align: center !important;
   }
@@ -660,11 +654,11 @@ a:hover {
     margin: auto;
     max-width: 400px;
   }
-  
+
   .skill-slider {
     margin: 20px 0;
   }
-  
+
   #skill-icon {
     font-size: 28px !important;
     margin: auto;
@@ -673,22 +667,26 @@ a:hover {
   }
 }
 
-
 .about-me {
-  color: white;
+  color: #303030;
   float: right;
   padding: 10px;
   margin-bottom: 5px;
 }
 
+.about-me p {
+  font-size: 14px;
+}
+
 .my-intro {
-  color: white;
-  font-family: "Cormorant", serif;
+  color: #303030;
+  font-family: "Aoboshi One", serif !important;
 }
 
 .h {
-  border-bottom: 0.5px solid rgb(255, 255, 255);
-  color: white;
+  border-bottom: 0.5px solid #303030;
+  color: #303030;
+  font-family: "Aoboshi One", serif !important;
 }
 
 .skills {
@@ -696,10 +694,10 @@ a:hover {
 }
 
 .slide {
-   padding-top: 20px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
+  padding-top: 20px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 1000px) {
@@ -716,10 +714,23 @@ a:hover {
   justify-content: center;
 }
 
+.onProj {
+  justify-content: inherit !important;
+  position: absolute;
+  left: 1em;
+  margin-top: 1em;
+}
+
+.leftAl {
+  margin-top: 4em;
+}
+
 #skill-icon {
-  color: #ffffff;
-  font-size: 44px;
-  text-shadow: -5px 5px 5px #000000, 0px 0px 3px #000000;
+  font-size: 3rem;
+  color: rgb(240, 240, 240);
+  text-shadow: -1px 1px 4px #838383;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
 }
 
 .resume {
@@ -755,7 +766,8 @@ a:hover {
 }
 
 .experience {
-  text-align:left;
+  color: #303030 !important;
+  text-align: left;
   margin-left: 10px;
   padding-bottom: 15px;
   border-bottom: 1.5px solid grey;
@@ -787,26 +799,34 @@ a:hover {
   font-size: 16px;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
   .all-projects {
     padding-bottom: 5% !important;
+  }
+  .single-project {
+    max-width: 300px !important;
+    max-height: 170px !important;
+    margin: auto !important;
+    margin-bottom: 5em !important;
   }
 }
 
 .projects {
   display: flex;
+  margin-top: 5em;
   justify-content: center;
 }
 
 .single-project {
   max-width: 400px;
-  padding: 30px;
+  max-height: 250px;
+  margin: 1.2em;
 }
 
 .project-image {
   border-radius: 15px;
-  box-shadow: black -15px 10px 30px, rgb(49, 49, 49) 5px 10px 30px;
-  opacity: 0.6;
+  box-shadow: 6px 6px 12px #a3a3a3, -6px -6px 12px #ffffff;
+  opacity: 0.9;
   transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -webkit-transition: opacity 1s ease-in-out;
@@ -818,7 +838,7 @@ a:hover {
   transition: opacity 0.55s ease-in-out;
   -moz-transition: opacity 0.55s ease-in-out;
   -webkit-transition: opacity 0.55s ease-in-out;
-  box-shadow: 3px 4px 10px rgb(44, 44, 44), -15px 10px 30px rgb(0, 0, 0);
+  box-shadow: 6px 6px 12px #838383, -6px -6px 12px #ffffff;
 }
 
 .white {
@@ -827,14 +847,14 @@ a:hover {
 
 .icons i {
   font-size: 3rem;
-  color: rgb(39, 39, 39);
-  text-shadow: black -2px 3px 5px;
+  color: rgb(240, 240, 240);
+  text-shadow: -1px 1px 4px #838383;
   margin: 0 0.5rem;
   transition: color 0.3s ease;
 }
 
 .single-project:hover .icons i {
-  color: #fff;
+  color: #303030;
   cursor: pointer;
 }
 
@@ -849,51 +869,76 @@ a:hover {
   justify-content: center;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
   .back-home {
     margin-bottom: 20% !important;
   }
 }
 
+.btm {
+  padding-bottom: 1.5em;
+}
+
 .back-home {
-  margin-top: 35px;
+  width: 11em;
+  height: 3.5em;
   font-family: "Cormorant", serif;
-  color: #ffffff;
-  padding: 0.7em 1.7em;
-  font-size: 18px;
-  border-radius: 0.5em;
-  background: rgb(19, 19, 19);
-  box-shadow: -5px 7px 12px rgb(0 0 0), 3px -2px 20px rgb(31 31 31);
+  border-radius: 30em;
+  font-size: 15px;
+  font-family: inherit;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  margin-top: 3em;
 }
 
 .computer-display {
-  float: left;
-  padding-left: 10px;
+  position: absolute;
+  right: 5%;
+  top: 25%;
   max-width: 400px;
   max-height: 400px;
   margin: auto;
 }
 
-@media screen and (max-width: 900px) {
+.about-proj {
+  text-align: left;
+  width: 60%;
+  margin-top: 1.5em;
+}
 
-.computer-display {
-  margin: auto;
-  display: block;
-  float: none !important;
-  padding-left: 0px;
+.about-proj h2 {
+  font-family: "Aoboshi One", serif !important;
+  color: #303030;
 }
-  
-.indv-project {
-  padding: 10px;
+
+.about-proj p {
+  font-family: "Aoboshi One", serif !important;
+  font-size: 14px;
+  color: #303030;
 }
-.deployed-footer {
-  background-color: transparent;
-  text-align: center;
-  margin: auto;
-  display: block;
-  position: relative;
-  bottom: 0 !important;
-}
+
+@media screen and (max-width: 900px) {
+  .computer-display {
+    margin: auto;
+    display: block;
+    float: none !important;
+    padding-left: 0px;
+  }
+
+  .indv-project {
+    padding: 10px;
+  }
+  .deployed-footer {
+    background-color: transparent;
+    text-align: center;
+    margin: auto;
+    display: block;
+    position: relative;
+    bottom: 0 !important;
+  }
 }
 
 .details {
@@ -902,7 +947,7 @@ a:hover {
 
 .deployed {
   color: white !important;
-  margin: auto ;
+  margin: auto;
   display: block !important;
   text-align: center !important;
 }

@@ -1,6 +1,7 @@
 import IndividualProj from "./IndividualProj";
-import SkullComp from "../../images/SkullComp.png";
+import SkullComp from "../../images/SkullPatComp.png";
 import BackHomeButton from "../BackHomeButton";
+import { Link } from "react-router-dom";
 
 const title = "Skull Patrol";
 const description =
@@ -22,7 +23,7 @@ function SkullPatrol() {
         repo={repo}
       />
       <div className="tech-used appear">
-        <div className="icons">
+      <div className="icons onProj">
           <i className="devicon-css3-plain" id="css"></i>
 
           <i className="devicon-html5-plain-wordmark" id="html"></i>
@@ -36,7 +37,11 @@ function SkullPatrol() {
           <i className="devicon-css3-plain" id="css"></i>
         </div>
       </div>
-      <BackHomeButton />
+      <Link to="/">
+      <div className="back appear leftAl">
+        <button className="back-home"> Back Home </button>
+      </div>
+    </Link>
     </div>
   );
 }

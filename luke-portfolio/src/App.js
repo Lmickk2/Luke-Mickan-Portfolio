@@ -17,6 +17,7 @@ import KnickKnack from "./Components/Projects/KnickKnack";
 import Resume from "./Components/Resume/Resume";
 import CodeGenie from "./Components/Projects/CodeGenie";
 import TheEgg from "./Components/Projects/TheEgg";
+import PlotWeave from "./Components/Projects/PlotWeave";
 import NotFound from "./Components/NotFound";
 
 
@@ -34,6 +35,7 @@ return (
         <Route path="/skullpatrol" element={<SkullPatrol />} />
         <Route path="/codegenie" element={<CodeGenie />} />
         <Route path="/theegg" element={<TheEgg />} />
+        <Route path="/plotweave" element={<PlotWeave />} />
         <Route path="/knickknack" element={<KnickKnack />} />
         <Route path="/404" element={<NotFound />} />
         <Route path="*" element={<Home />} />

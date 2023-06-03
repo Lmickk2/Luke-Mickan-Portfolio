@@ -1,6 +1,7 @@
 import IndividualProj from "./IndividualProj";
-import GenieComp from "../../images/GenieComp.png";
+import GenieComp from "../../images/CodeGenieComp.png";
 import BackHomeButton from "../BackHomeButton";
+import { Link } from "react-router-dom";
 
 const title = "Code Genie";
 const description =
@@ -22,7 +23,7 @@ function CodeGenie() {
         deployed={deployed}
       />
       <div className="tech-used appear">
-        <div className="icons">
+        <div className="icons onProj">
           <i className="devicon-css3-plain" id="css"></i>
 
           <i className="devicon-javascript-plain" id="js"></i>
@@ -38,7 +39,11 @@ function CodeGenie() {
           <i className="devicon-github-original" id="github"></i>
         </div>
       </div>
-      <BackHomeButton />
+      <Link to="/">
+      <div className="back appear leftAl">
+        <button className="back-home"> Back Home </button>
+      </div>
+    </Link>
     </div>
   );
 }

@@ -8,14 +8,14 @@ function IndividualProj(props) {
         <div className="portrait">
           <img src={props.image} className="computer-display"></img>
 
-          <div className="about-me">
+          <div className="about-proj">
             <div className="details">
-              <h2 className="my-intro h">{props.title}</h2>
-              <p className="my-intro">{props.description}</p>
+              <h2>{props.title}</h2>
+              <p>{props.description}</p>
 
               <div className="skills">
-                <h2 className="my-intro h">Technology Used</h2>
-                <p className="my-intro">{props.techDesc}</p>
+                <h2>Technology Used</h2>
+                <p>{props.techDesc}</p>
               </div>
               <div className="project-links">
                 <Link to={props.deployed} className="project-link">View Deployed Application</Link>

@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import SPWideImage from "../../images/SP-Wide.png";
 import KKWideImage from "../../images/KK-Wide.png";
 import TheEggWide from "../../images/TheEgg-Wide.png"
-import GenieWide from "../../images/Genie-Wide.png"
+import GenieWide from "../../images/Genie-Wide.png";
+import PWWide from "../../images/PW-wide.png";
 
 function Cards() {
   function handleProjectHover(project, skills) {
@@ -13,7 +14,7 @@ function Cards() {
     if (window.innerWidth >= 900) {
       project.addEventListener("mouseenter", () => {
         skillElements.forEach((element) => {
-          element.style.color = "white";
+          element.style.color = "#303030";
         });
       });
   
@@ -24,7 +25,7 @@ function Cards() {
       });
     } else if (window.innerWidth <= 1024) {
       skillElements.forEach((element) => {
-        element.style.color = "white";
+        element.style.color = "#303030";
       });
     }
   }
@@ -39,13 +40,16 @@ function Cards() {
         skills = ["react", "css", "js", "graphql", "node", "github", "mongo"];
         break;
       case "project2":
-        skills = ["html", "css", "js", "sql", "node", "github", "hbs"];
+        skills = ["react", "css", "js", "graphql", "node", "github", "mongo"];
         break;
       case "project3":
         skills = ["react", "css", "js", "graphql", "node", "github", "mongo"];
         break;
       case "project4":
         skills = ["html", "css", "js", "react", "node"];
+        break;
+        case "project5":
+        skills = ["html", "css", "js", "sql", "node", "github", "hbs"];
         break;
       default:
         break;
@@ -121,16 +125,16 @@ function Cards() {
         </Link>
       </div>
       <div className="single-project">
-        <Link to="/knickknack">
+        <Link to="/plotweave">
           <img
-            src={KKWideImage}
+            src={PWWide}
             className="project-image"
             onMouseEnter={handleHoverEvent}
             id="project2"
           ></img>
           <p className="project-description">
-            <b>Full Stack Ecommerce Application</b>
-            <br></br>- HTML, CSS, JS, SQL -
+            <b>Full Stack Reading/Writing App</b>
+            <br></br>- MERN Stack, CSS, GraphQL -
           </p>
         </Link>
       </div>
@@ -160,6 +164,20 @@ function Cards() {
           <p className="project-description">
             <b>Full Stack DeFi Minting Application</b>
             <br></br>- HTML, CSS, JS, DeFi -
+          </p>
+        </Link>
+      </div>
+      <div className="single-project">
+        <Link to="/knickknack">
+          <img
+            src={KKWideImage}
+            className="project-image"
+            onMouseEnter={handleHoverEvent}
+            id="project5"
+          ></img>
+          <p className="project-description">
+            <b>Full Stack Ecommerce Application</b>
+            <br></br>- HTML, CSS, JS, SQL -
           </p>
         </Link>
       </div>

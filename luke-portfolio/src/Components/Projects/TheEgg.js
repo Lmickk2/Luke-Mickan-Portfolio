@@ -1,6 +1,7 @@
 import IndividualProj from "./IndividualProj";
 import TheEggComp from "../../images/TheEggComp.png";
 import BackHomeButton from "../BackHomeButton";
+import { Link } from "react-router-dom";
 
 const title = "The Egg Cafe";
 const description =
@@ -22,7 +23,7 @@ function TheEgg() {
         deployed={deployed}
       />
       <div className="tech-used appear">
-        <div className="icons">
+      <div className="icons onProj">
           <i className="devicon-css3-plain" id="css"></i>
 
           <i className="devicon-javascript-plain" id="js"></i>
@@ -38,7 +39,11 @@ function TheEgg() {
           <i className="devicon-github-original" id="github"></i>
         </div>
       </div>
-      <BackHomeButton />
+      <Link to="/">
+      <div className="back appear leftAl">
+        <button className="back-home"> Back Home </button>
+      </div>
+    </Link>
     </div>
   );
 }

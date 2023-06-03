@@ -1,5 +1,6 @@
 import BackHomeButton from "../BackHomeButton";
 import Navbar from "../Navbar";
+import { Link } from "react-router-dom";
 
 function Resume() {
   return (
@@ -76,7 +77,11 @@ function Resume() {
           </div>
         </div>
       </div>
-      <BackHomeButton />
+      <Link to="/">
+      <div className="back appear btm">
+        <button className="back-home"> Back Home </button>
+      </div>
+    </Link>
     </div>
   );
 }
