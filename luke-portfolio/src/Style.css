@@ -2,6 +2,11 @@
   font-family: "Cormorant", serif !important;
 }
 
+@font-face {
+  font-family: "Aoboshi One", serif;
+  src: url("./fonts/AoboshiOne-Regular.ttf");
+}
+
 html,
 body {
   font-family: "Cormorant", serif !important;
